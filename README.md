@@ -15,7 +15,20 @@ A hash with support for grouping keys and values.
 require 'range-hash'
 ```
 
-### Examples for the Impatient
+## Examples
+
+Setting and getting key/value pairs:
+
+```ruby
+hash = RangeHash.new
+hash[4..8] = 'hello'
+hash[12..20] = 'world'
+
+hash[4]  # => 'hello'
+hash[6]  # => 'hello'
+hash[14] # => 'world'
+hash[20] # => 'world'
+```
 
 ## Requirements
 
