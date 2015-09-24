@@ -30,6 +30,15 @@ hash[14] # => 'world'
 hash[20] # => 'world'
 ```
 
+`RangeHash` supports all the `Enumerable` methods like `each` and `map`:
+
+```ruby
+hash.each do |index, value|
+  # yields each index (4, 5, 6, 7, 8, etc) along with
+  # the corresponding value
+end
+```
+
 ## Requirements
 
 No external requirements.
